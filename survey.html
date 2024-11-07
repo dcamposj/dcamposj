@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style/survey.css">
+  </head>
+
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">This is an empty shell survey. It won't be saved.</p>
+
+    <form id="survey-form">
+
+      <fieldset class="info">
+
+        <label for="name" id="name-label" name="labelName" > Name: 
+          <input type="text" id="name" name="first-name" placeholder="Enter your name" required/>
+        </label>
+
+        <label for="email" id="email-label" name="labelEmail" > Email: 
+          <input type="email" id="email" placeholder="Enter your email" required/>
+        </label>
+
+        <label for="number" id="number-label" name="labelNumber" "> Age
+          <input type="number" id="number" name="age" pattern="[0-9]+" min="13" max="120" placeholder="optional"/>
+        </label>
+
+      </fieldset>
+
+      <fieldset class="role">
+
+        <label for="dropdown">What is your role?
+          <select id="dropdown" name="selectOption">
+
+            <option value="">(select one)</option>
+            <option value="S">Student</option>
+            <option value="T">Teacher</option>
+            <option value="O">Other</option>
+
+          </select>
+        </label>
+
+      </fieldset>
+
+      <fieldset class="question">
+
+            <p>Do you like this form?  </p>
+
+            <label for="radio-yes"><input id="radio-yes" type="radio" name="radioName" class="inline" value="yes"/> Yes</label>
+
+            <label for="radio-no"><input id="radio-no" type="radio" name="radioName" class="inline" value="no"/> No</label>
+
+            <label for="radio-rather-not"><input id="radio-rather-not" type="radio" name="radioName" class="inline" value="ratherNot"/> Rather not say</label>
+
+      </fieldset>
+          
+      <fieldset class="food">
+
+            <p>What food option do you like the most? You can select multiple.  </p>
+
+            <label for="pizza"> Pizza
+              <input id="pizza" type="checkbox" name="pizza-check" class="inline" value="Pizza"/>
+            </label>
+
+            <label for="hamburger"> Hamburger
+              <input id="hamburger" type="checkbox" name="hamburger-check" class="inline" value="Hamburger"/>
+            </label>
+
+            <label for="taco"> Taco
+              <input id="taco" type="checkbox" name="taco-check" class="inline" value="Tacos"/>
+            </label>
+
+            <label for="salad"> Salad
+              <input id="salad" type="checkbox" name="salad-check" class="inline" value="Salad"/>
+            </label>
+</fieldset>
+<fieldset class="other-food">
+            <label for="client-option">If your preferred food is not listed, please add it in the comments:
+              <textarea id="client-option" name="txtAreaClientOption" rows="3" cols="30" placeholder="e.g. I would like fruits to be added in the options..."></textarea>
+            </label>
+
+      </fieldset>
+
+      <button id="submit" type="submit" value="Submit" />Submit</button>
+
+    </form>
+  </body>
+</html>
