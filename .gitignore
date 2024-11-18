@@ -1,3 +1,4 @@
+# git rm -r --cached filename.ext
 # Ignore editor files
 .vscode/
 
@@ -15,10 +16,11 @@ npm-cache/
 
 # Ignore directories
 node_modules/
-node_modules
+todo/
 
 # Ignore files
 package.json
 tailwind.config.js
-package-lock
+package-lock.json
 .prettierrc
+testing.js
