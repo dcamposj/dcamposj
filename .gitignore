@@ -1,0 +1,24 @@
+# Ignore editor files
+.vscode/
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore cache
+npm-cache/
+.cache/
+
+# Ignore local configuration files
+.env
+.env.*
+
+# Ignore directories
+node_modules/
+node_modules
+
+# Ignore files
+package.json
+tailwind.config.js
+package-lock
+.prettierrc
