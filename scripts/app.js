@@ -18,5 +18,4 @@ function MyButton() {
   return <button onClick={handleClick}>Clicked {count} times</button>;
 }
 
-// Renderiza la aplicación
 ReactDOM.render(<MyApp />, document.getElementById("root"));

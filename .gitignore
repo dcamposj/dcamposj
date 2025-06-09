@@ -7,20 +7,13 @@
 *~
 
 # Ignore cache
-npm-cache/
-.cache/
+
 
 # Ignore local configuration files
 .env
 .env.*
 
 # Ignore directories
-node_modules/
-todo/
+
 
 # Ignore files
-package.json
-tailwind.config.js
-package-lock.json
-.prettierrc
-testing.js
